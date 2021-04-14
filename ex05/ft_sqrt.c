@@ -6,7 +6,7 @@
 /*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 18:51:26 by dludtke-          #+#    #+#             */
-/*   Updated: 2021/04/13 18:55:37 by dludtke-         ###   ########.fr       */
+/*   Updated: 2021/04/14 18:44:21 by dludtke-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,8 @@ int		ft_sqrt(int nb)
 	{
 		if ((n * n) == nb)
 			return (n);
+		else if (n >= 46341)
+			return (0);
 		n++;
 	}
 	return (0);
