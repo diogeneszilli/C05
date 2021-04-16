@@ -6,7 +6,7 @@
 /*   By: dludtke- <dludtke-@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/04/13 19:00:53 by dludtke-          #+#    #+#             */
-/*   Updated: 2021/04/14 23:20:34 by dludtke-         ###   ########.fr       */
+/*   Updated: 2021/04/16 14:29:27 by dludtke-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,11 +17,11 @@ int		ft_is_prime(int nb)
 	n = 2;
 	if (nb <= 1)
 		return (0);
-	while (nb % n != 0)
+	while ((n * n) <= nb && n <= 46341)
 	{
-		n++;
-		if (nb == n)
-			return (1);
+		if (nb % n == 0)
+			return (0);
+		n += 6;
 	}
 	return (0);
 }
